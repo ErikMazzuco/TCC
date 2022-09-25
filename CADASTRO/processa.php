@@ -7,7 +7,7 @@ include_once("../conexao.php");
 $nome = $_POST ['nome'];
 $email = $_POST ['email'];
 $senha = $_POST ['senha'];
-$result = "INSERT INTO usuarios1 (nome,email,Senha) VALUES ('$nome','$email','$senha')";
+$result = "INSERT INTO usuarios (nome,email,Senha) VALUES ('$nome','$email','$senha')";
 
 
 
