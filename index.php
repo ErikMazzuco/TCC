@@ -1,4 +1,6 @@
+<div class="LOGIN">
 <?php
+
 include('conexao.php');
 
 if(isset($_POST['email']) || isset($_POST['senha'])) {
@@ -45,7 +47,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <div class="LOGIN">
+    
     <title>Login</title>
 </head>
 <body>
