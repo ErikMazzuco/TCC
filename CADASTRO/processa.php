@@ -23,13 +23,13 @@ if(mysqli_insert_id($mysqli)){
     $_SESSION['msg'] = "<p style='color:green;'>Usuário cadastrado com sucesso</p>";
     
     //redireciona para o arquivo index
-    header("Location: index.php");
+    header("Location: ../index.php");
     
     }else{
     
     $_SESSION['msg'] = "<p style='color:red;'>Usuário não foi cadastrado com sucesso</p>";
     
-    header("Location: index.php");
+    header("Location: ../index.php");
     
     }
     
