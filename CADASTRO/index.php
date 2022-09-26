@@ -12,7 +12,7 @@ session_start();
 </head>
 <body>
 
-<h1>Cadastrar Usuário</h1>
+<h1>Criar Conta</h1>
 <?php
 
 //se existir a variavel imprime a variavel global
@@ -33,7 +33,7 @@ unset($_SESSION['msg']); //destroi a variavel global
 <label>SENHA: </label>
 <input type="password" id="senha" name="senha" placeholder="Digite uma senha"><br><br>
 
-<input type="submit" value="Cadastrar">
+<input type="submit" value="Criar Conta">
 
 </form>
 
