@@ -47,7 +47,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
     <title>Login</title>
 </head>
 <body>
-    <h1>ENTRAR</h1>
+    <h1>Entrar</h1>
     <form action="" method="POST">
         <p>
             <label>E-mail</label>

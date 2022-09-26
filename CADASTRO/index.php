@@ -37,6 +37,10 @@ unset($_SESSION['msg']); //destroi a variavel global
 
 </form>
 
+<a href="../index.php">Voltar</a>
+
+
+
 </body>
 
 </html>
