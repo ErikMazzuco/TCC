@@ -7,11 +7,12 @@ session_start();
 <head>
 
 <meta charset="utf-8">
+<link rel="stylesheet" href="../style.css">
 <title> Cadastrar: </title>
 
 </head>
 <body>
-
+<div class="LOGIN">
 <h1>Criar Conta</h1>
 <?php
 
@@ -23,7 +24,7 @@ unset($_SESSION['msg']); //destroi a variavel global
 }
 
 ?>
-<form method="post" action="processa.php">
+<form  method="post" action="processa.php">
 <label>Nome: </label>
 <input type="text" id="nome" name="nome" placeholder="Digite o nome completo"><br><br>
 
@@ -39,7 +40,7 @@ unset($_SESSION['msg']); //destroi a variavel global
 
 <a href="../index.php">Voltar</a>
 
-
+</div>
 
 </body>
 
