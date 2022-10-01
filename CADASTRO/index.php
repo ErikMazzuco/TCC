@@ -5,7 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
+<meta name="viewport" content="width=device-width">
 <meta charset="utf-8">
 <link rel="stylesheet" href="../style.css">
 <title> Cadastrar: </title>
