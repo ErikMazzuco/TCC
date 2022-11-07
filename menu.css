@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belleza&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+header{
+    max-width: 1680px;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+header .logo img{
+    width: 70px;
+    margin: 60px;
+}
+header .menu{
+    display: flex;
+}
+header .menu ul{
+    display: flex;
+    padding: 0 150px;
+}
+header .menu ul li{
+    list-style: none;
+    padding: 0 30px;
+}
+header .menu ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Belleza', sans-serif;
+    color: #0a9962;
+    transition: all 0.3s;
+}
+header .menu ul li a:hover{
+    color: #4fe6c0;
+    text-decoration: underline;
+}
+header .btn{
+    display: none;
+}
+/*      SECTION       */
+section .container{
+    max-width: 1680px;
+    width: 100%;
+    height: 85vh;
+    margin: 0 auto;
+}
+/*      HOME       */
+#home .container{
+    background: url(image/bg1.png) no-repeat;
+    background-size: cover;
+}
+#home .container .content{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 60px;
+}
+#home .container .content h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 10px;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    color: #302725;
+}
+#home .container .content p{
+    font-size: 1.3rem;
+    color: #737373;
+    margin-bottom: 120px;
+    margin-top: 40px;
+    font-family: 'Belleza', sans-serif;
+}
+#home .container .content span{
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', cursive;
+    color: #B48C56;
+    letter-spacing: 5px;
+}
+#home .container .content .button{
+    padding-top:200px ;
+}
+#home .container .content .button button{
+    padding: 10px 20px;
+    border: none;
+    background:#B48C56 ;
+    color: #f0f8ff;
+    font-family: 'Belleza', sans-serif;
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+#home .container .content .button button:hover{
+    transform: scale(1.1);
+}
+#home .container .content button.btn2{
+    background: #302725;
+    padding: 15px 20px;
+    position: relative;
+    right: 5px;
+}
