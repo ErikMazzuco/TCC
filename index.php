@@ -17,17 +17,28 @@ session_start();
     <div class="logo-imagem"></div>
     <div class="logo-texto">
 
-    <?php
+<?php 
+if(isset($_SESSION['id'])) {
 
+
+if (($_SESSION['id'] == '1')){
+    header("Location: admin/admin.php");
+    }
+}
+?>
+
+
+<?php 
 
 if(isset($_SESSION['id'])) {
     
         echo $_SESSION['nome']; 
 }else{
     
-    $_SESSION['msg'] = '<a href="LOGIN/index.php">Entrar</a>';
+    $_SESSION['msg'] = '<a href="login/index.php">Entrar</a>';
     echo $_SESSION['msg']; 
 }
+
     ?>
 
         </div>
@@ -37,7 +48,7 @@ if(isset($_SESSION['id'])) {
     <ul>
         <li><a href="#">sobre</a></li>
         <li><a href="#">contato</a></li>
-        <li><a href="#">PRODOTOS</a></li>
+        <li><a href="#">PRODUTOS</a></li>
         <li><a href="LOGIN/logout.php">Sair</a></li>
     </ul>
 </header>

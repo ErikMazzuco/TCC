@@ -55,7 +55,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
     <form action="" method="POST">
         <p>
             <label>E-mail</label>
-            <input type="text" name="email">
+            <input type="email" name="email">
         </p>
         <p>
             <label>Senha</label>

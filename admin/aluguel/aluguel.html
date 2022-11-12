@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALUGUEL LIVROS</title>
+</head>
+<body>
+    <form class="card" action="processa.php">
+        <div class="card-header">
+            <h2>REGISTRO EMPRÉSTIMO</h2>
+        </div>
+
+        <div class="card-content">
+
+            <div class="card-content-area">
+                <label>Nº Identificação do Livro </label>
+                <input type="text" id="idLivro" name="idLivro" placeholder="Digite o ID do livro"><br>
+            </div>
+
+            <div class="card-content-area">
+                <label>Nome Livro </label>
+                <input type="text" id="livro" name="livro" placeholder="Digite o nome do livro"><br>
+            </div>
+
+            <div class="card-content-area">
+                <label>Nome Contratante</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o nome do contratante"><br>
+            </div>
+
+            <div class="card-content-area">
+                <label>CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Digite o CPF do contratante"><br>
+            </div>
+
+            <div class="card-content-area">
+                <label>Contato</label>
+                <input type="tel" id="telContratante" name="telContratante" placeholder="Digite o contato do contratante"><br>
+            </div>
+
+            <div class="card-content-area">
+                <label>Data Empréstimo </label>
+                <input type="date" id="dataEmprestimo" name="dataEmprestimo" placeholder="Data inicial do empréstimo"><br>
+            </div>
+
+            <div class="card-content-area">
+                <label>Data Devolução Estimada </label>
+                <input type="date" id="dataDevolucao" name="dataDevolucao" placeholder="Data estimada para devolução"><br>
+            </div>
+
+        </div>
+
+        <div class="card-footer">
+            <input type="button" value="Registrar Empréstimo" class="submit">
+            <br>
+            <a href="../index.php">Voltar</a>
+            <br>
+        </div>
+
+    </form>
+</div>
+
+</body>
+
+</html>
