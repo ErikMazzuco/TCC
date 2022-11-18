@@ -64,7 +64,10 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         </p>
 
     </form>
-    <a href="CADASTRO/index.php">CRIAR CONTA</a>
+<p>
+    Não tem conta?
+    </p>
+    <a href="CADASTRO/index.php">CRIE UMA</a>
 
 </div>
 </body>
