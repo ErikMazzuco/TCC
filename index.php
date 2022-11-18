@@ -8,7 +8,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>MY BOOKS</title>
 </head>
 <body class="LOGIN">
 
@@ -46,10 +46,7 @@ if(isset($_SESSION['id'])) {
 
 <div class="menu">
     <ul>
-        <li><a href="#">sobre</a></li>
-        <li><a href="#">contato</a></li>
-        <li><a href="#">PRODUTOS</a></li>
-        <li><a href="LOGIN/logout.php">Sair</a></li>
+        <li><a href="login/logout.php">Sair</a></li>
     </ul>
 </header>
 

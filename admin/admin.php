@@ -12,6 +12,7 @@
 
 <a href="aluguel/aluguel.html"  >ALUGUEL  </br>
 <a href="SaveBooks/index.php"  > CADASTRO
+<a href="../login/logout.php"  > SAIR
 
 </body>
 </html>
