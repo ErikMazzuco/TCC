@@ -34,12 +34,13 @@ unset($_SESSION['msg']); //destroi a variavel global
 <label>SENHA: </label>
 <input type="password" id="senha" name="senha" placeholder="Digite uma senha"><br><br>
 
-<input type="submit" value="Criar Conta">
+<input type="submit" value="Criar Minha conta Conta">
 
 </form>
 
-Já possui conta?
-<a href="../index.php">Entre</a>
+Já possui conta? <a href="../index.php">Entre</a>
+
+<a href="http://tcc-2022.herokuapp.com/PRIVACY/">Termos e Privacidade</a>
 
 </div>
 
