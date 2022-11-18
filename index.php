@@ -35,7 +35,7 @@ if(isset($_SESSION['id'])) {
         echo $_SESSION['nome']; 
 }else{
     
-    $_SESSION['msg'] = '<a href="login/index.php">Entrar</a>';
+    $_SESSION['msg'] = '<a href="LOGIN/index.php">Entrar</a>';
     echo $_SESSION['msg']; 
 }
 
@@ -46,7 +46,7 @@ if(isset($_SESSION['id'])) {
 
 <div class="menu">
     <ul>
-        <li><a href="login/logout.php">Sair</a></li>
+        <li><a href="LOGIN/logout.php">Sair</a></li>
     </ul>
 </header>
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ADMIN</title>
 </head>
 <body>
     
@@ -12,7 +12,7 @@
 
 <a href="aluguel/aluguel.html"  >ALUGUEL  </br>
 <a href="SaveBooks/index.php"  > CADASTRO
-<a href="../login/logout.php"  > SAIR
+<a href="../LOGIN/logout.php"  > SAIR
 
 </body>
 </html>
