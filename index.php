@@ -31,7 +31,7 @@ if (($_SESSION['id'] == '1')){
 <?php 
 
 if(isset($_SESSION['id'])) {
-        echo "olá,  "
+        echo "olá,  ";
         echo $_SESSION['nome']; 
 }else{
     
