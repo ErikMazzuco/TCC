@@ -1,6 +1,8 @@
 <?php
 session_start();
 ?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,48 +12,48 @@ session_start();
     <link rel="stylesheet" href="style.css">
     <title>MY BOOKS</title>
 </head>
-<body class="LOGIN">
 
+
+
+<body>
 <header>
-<div class="cointer-logo">
-    <div class="logo-imagem"></div>
-    <div class="logo-texto">
 
+<!-- Envia para pagina de admin -->
 <?php 
 if(isset($_SESSION['id'])) {
-
-
 if (($_SESSION['id'] == '1')){
     header("Location: admin/admin.php");
     }
 }
 ?>
 
-
-<?php 
-
-if(isset($_SESSION['id'])) {
-        echo "olá,  ";
-        echo $_SESSION['nome']; 
-}else{
-    
-    $_SESSION['msg'] = '<a href="LOGIN/index.php">Entrar</a>';
-    echo $_SESSION['msg']; 
-}
-
-    ?>
-
-        </div>
-</div>
-
 <div class="menu">
-    <ul>
-        <li><a href="LOGIN/logout.php">Sair</a></li>
-    </ul>
+
+    <!-- usuario comum mostra se logado-->
+    <?php
+    if(isset($_SESSION['id'])) {
+
+        
+        $_SESSION['ola'] = '  <ul><li><a><b>Olá,</b>  ';
+        echo $_SESSION['ola']; 
+            echo $_SESSION['nome']; 
+            $_SESSION['fim'] = '</ul></li>';
+            echo $_SESSION['fim'];
+
+
+        $_SESSION['sair'] = '<ul><li><a href="LOGIN/logout.php">Sair</a></li></ul>';
+        echo $_SESSION['sair']; 
+
+
+    }else{
+        $_SESSION['enter'] = '<ul><li>';
+        echo $_SESSION['enter'];
+        $_SESSION['entrar'] = '<a href="LOGIN/index.php">Entrar</a>';
+        echo $_SESSION['entrar']; 
+    }
+        ?>
+
+</div>
 </header>
-
-
-
-    
 </body>
 </html>

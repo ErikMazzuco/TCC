@@ -6,7 +6,7 @@ box-sizing: border-box;
 
 }
 body{
-  background-color: ba15181e;
+  background-color: #ba15181e;
 }
 
  header{
@@ -14,7 +14,8 @@ body{
     width: 100%;
     background-color: rgb(0, 0, 0);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    
     align-items: center;
     padding: 15px 0px;
  }
@@ -22,6 +23,11 @@ body{
 .logo-texto{
 
     color: aliceblue;
+}
+.menu{
+  
+  display: flex;
+
 }
 
  .menu li{
@@ -38,11 +44,12 @@ body{
     text-transform: uppercase;
     padding: 15px 10px;
     border-radius: 15px;
-
+    
   }
 
 .menu li a:hover{
     background-color:rgba(100, 100, 100, 0.5);
+    padding: 5px 10px;
     
 }
 
