@@ -53,16 +53,8 @@
 <body> 
     <div class="main-login">
     <div class="right-login">
-   
-    
-        
-
-         
-
-
-
-            <form action="" class="card-login" method="POST">
-            <h1>Entre</h1>
+            <form action="" class="card-login" autocomplete="off" method="POST">
+            <h1>ENTRE</h1>
                 
                 <div class="textfield"> 
                     <label>E-mail</label> 
@@ -76,43 +68,10 @@
                 
                     <button class="btn-login" type="submit">Entrar</button>
                 
-                    <p>Não tem conta?  <a href="CADASTRO/index.php"><font color="gray">CRIE UMA! </font></a></p>
+                    <p><font color="white">Não tem conta?  </font><a href="CADASTRO/index.php"><font color="gray">CRIE UMA! </font></a></p>
             </form>
             </div>
      </div>
-<div>
-
-
-
-<!--
-            <div class="right-login">
-     <div class="card-login">
-
-                    <h1>LOGIN</h1>
-                        
-                    <form action="" method="POST">
-                    <div class="textfield"> 
-
-                            <label for="usuario">Email</label>
-                            <input type="email" name="email" placeholder="email">
-                    </div>
-                    <div class="textfield">
-                            <label for="senha">Senha</label>
-                            <input type="password" name="senha"placeholder="Senha">
-                    </div>
-                <button type="submit" class="btn-login" >Login</button>
-</form>
-
-    </div>
-            
-</div>
-
-
--->
-
-           
+<div>        
 </body>
-
-
-
 </html>
