@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("../login/conexao.php");
+include_once("../../login/conexao.php");
 
 $titulo = $_POST ['titulo'];
 $autor = $_POST ['autor'];
@@ -9,7 +9,7 @@ $estoque = $_POST ['estoque'];
 $sobre = $_POST ['sobre'];
 
 
-$result = "INSERT INTO Livros (titulo,autor,ano,estoque,sobre,datain) VALUES ('$titulo','$autor','$ano','$estoque','$sobre,'now()')";
+$result = "INSERT INTO Livros (titulo,autor,ano,estoque,sobre) VALUES ('$titulo','$autor','$ano','$estoque','$sobre'";
 
 $query = mysqli_query ($mysqli,$result);
 
@@ -18,14 +18,14 @@ $query = mysqli_query ($mysqli,$result);
 
 if(mysqli_insert_id($mysqli)){
 
-    $_SESSION['msg'] = "<p style='color:green;'>Usuário cadastrado com sucesso</p>";
+    $_SESSION['msg'] = "<p style= 'color:green;'>livro cadastrado</p>";
     
     //redireciona para o arquivo index
 
     header("index.php");
     }else{
     
-    $_SESSION['msg'] = "<p style='color:red;'>Usuário não foi cadastrado com sucesso</p>";
+    $_SESSION['msg'] = "<p style='color:red;'> não foi POSSIVEL cadastraR O LIVRO</p>";
     
 
     header("index.php");
