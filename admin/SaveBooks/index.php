@@ -1,56 +1,50 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta name="viewport" content="width=device-width">
 <meta charset="utf-8">
-<link rel="stylesheet" href="style_C.css">
-<title> Cadastrar: </title>
-
-
-
+<link rel="stylesheet" href="style.css">
+<title>New Book</title>
 </head>
 
     <body>
+        <div class=center>
 
-<center>
-        <form class="card" method="post" action="processa.php">
+                <form class="card" method="post" action="processa.php">
 
+                    <div class="textfield">
+                    <label>Titulo: </label>
+                    <input type="text" id="titulo" name="titulo" placeholder="insira um titulo">
+                    </div>
 
-            <label>Iitulo: </label>
-            <input type="text" id="titulo" name="titulo" placeholder="insira um titulo"><br>
-<br>
-            <label>Autor: </label>
-            <input type="text" id="autor" name="autor" placeholder="insira o nome do autor"><br>
-<br>
-            <label>ano: </label>
-            <input type="date" id="ano" name="ano" placeholder="insira o ano de lançamento"><br>
-<br>
-            <label>quantidade: </label>
-            <input type="int" id="estoque" name="estoque" placeholder="quantos livros adicionar?"><br>
-<br>
-            <label>descrição: </label>
-            <input type="text" id="sobre" name="sobre" placeholder="descrição do estado do livros"><br>
-            
-<br>
+                    <div class="textfield">
+                    <label>Autor:</label>
+                    <input type="text" id="autor" name="autor" placeholder="insira o nome do autor">
+                    </div>
 
-            <input type="submit" value="Cadastrar-se" class="submit">
+                    <div class="textfield">
+                    <label>ano:</label>
+                    <input type="date" id="ano" name="ano" placeholder="insira o ano de lançamento">
+                    </div>
 
-</center>
+                    <div class="textfield">
+                    <label>quantidade:</label>
+                    <input type="int" id="estoque" name="estoque" placeholder="quantos livros">
+                    </div>
 
-        </form>
-
+                    <div class="textfield">
+                    <label>descrição:</label>
+                    <input type="text" id="sobre" name="sobre" placeholder="descrição do estado do livros">
+                    </div>
+                    <input type="submit" value="Adicionar livro" class="submit">
+                </form>
+        </div>        
     </body>
 
 </html>
 
 
-
-
+<!-- verifa se é admin -->
 <?php 
 if(isset($_SESSION['id'])) {
 
