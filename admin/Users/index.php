@@ -21,20 +21,6 @@ if (($_SESSION['id'] != '1')){
 }
 ?>
 
-
-<?php
-include_once('../../LOGIN/conexao.php')
-
-$sql = "SELECT * FROM usuarios ORDER BY id DESC";
-
-
-
-
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -46,7 +32,17 @@ $sql = "SELECT * FROM usuarios ORDER BY id DESC";
 <body>
     
 
+<?php
+include_once('../../LOGIN/conexao.php')
 
+
+//$sql = "SELECT * FROM usuarios ORDER BY id DESC";
+
+
+
+
+
+?>
 
 
 </body>
