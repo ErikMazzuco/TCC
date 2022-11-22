@@ -53,10 +53,13 @@ unset($_SESSION['msg']); //destroi a variavel global
 <p>Ao criar uma conta você concorda com os
 <a href="http://tcc-2022.herokuapp.com/PRIVACY/">Termos e Politica de Privacidade</a>
 
+
+
+
+
+
+
 </form>
-
-
-
 
 
 </div>
