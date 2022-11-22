@@ -48,15 +48,19 @@ unset($_SESSION['msg']); //destroi a variavel global
 
 <input type="submit" class="btn-cadastro" value="Criar Minha Conta">
 
-<p>Já possui conta? <a href="../index.php">Entre</a></p>
+<p>Já possui conta? <a href="../index.php"><font color="gray">Entre</a></p></font>
 
+<center>
 <p>Ao criar uma conta você concorda com os
-<a href="http://tcc-2022.herokuapp.com/PRIVACY/">Termos e Politica de Privacidade</a>
+<a href="http://tcc-2022.herokuapp.com/PRIVACY/"><font color="gray">Termos e Politica de Privacidade</a>
+
+
+
+
+
+
 
 </form>
-
-
-
 
 
 </div>
