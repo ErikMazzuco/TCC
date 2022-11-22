@@ -7,13 +7,13 @@ session_start();
 <head>
 <meta name="viewport" content="width=device-width">
 <meta charset="utf-8">
-<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="style.css">
 <title> Cadastrar: </title>
 
 </head>
 <body>
-<div class="LOGIN">
-<h1>Criar Conta</h1>
+
+
 <?php
 
 //se existir a variavel imprime a variavel global
@@ -24,24 +24,42 @@ unset($_SESSION['msg']); //destroi a variavel global
 }
 
 ?>
-<form  method="post" action="processa.php">
+<div class="main">
+    <div class="center">
+
+<form  method="post" class="card-cadastro" action="processa.php">
+<h1>Criar Conta</h1>
+
+<div class="textfield"> 
 <label>Nome: </label>
-<input type="text" id="nome" name="nome" placeholder="Digite o nome completo"><br><br>
+<input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
+</div>
 
+<div class="textfield"> 
 <label>E-mail: </label>
-<input type="email" id="email" name="email" placeholder="Digite o seu melhor e-mail"><br><br>
+<input type="email" id="email" name="email" placeholder="Digite o seu e-mail"><br><br>
+</div>
 
+
+<div class="textfield"> 
 <label>SENHA: </label>
 <input type="password" id="senha" name="senha" placeholder="Digite uma senha"><br><br>
+</div>
 
-<input type="submit" value="Criar Minha conta Conta">
+<input type="submit" class="btn-cadastro" value="Criar Minha Conta">
+
+<p>Já possui conta? <a href="../index.php">Entre</a></p>
+
+<p>Ao criar uma conta você concorda com os
+<a href="http://tcc-2022.herokuapp.com/PRIVACY/">Termos e Politica de Privacidade</a>
 
 </form>
 
-Já possui conta? <a href="../index.php">Entre</a>
 
-<a href="http://tcc-2022.herokuapp.com/PRIVACY/">Termos e Privacidade</a>
 
+
+
+</div>
 </div>
 
 </body>

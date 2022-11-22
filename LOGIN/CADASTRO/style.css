@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    font-family: 'Noto Sans' , sans-serif;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #15181e;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.center{
+    width: 60vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-cadastro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #2e2f33;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.card-cadastro > h1 {
+    color: #ffffff;
+    font-weight: 800;
+    margin: 0;
+}
+.btn-cadastro{
+    width: 100%;
+    padding: 16px;
+    margin: 20px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background: #494646;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00000052;
+
+}
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 1px 0px ;
+}
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #64616c;
+    color: white;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+.textfield > label{
+    color: #ffffffde;
+    margin-bottom: 10px;
+}
+.textfield > input ::placeholder{
+    color: #ffffff;
+    
+}
+
+p{
+    color: white;
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .card-cadastro{
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+        border-radius: 0%;
+    }
+    .main{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+    }
+    .center{
+        width: 100%;
+        height: 100%;
+        
+    }
+}
