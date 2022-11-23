@@ -59,10 +59,12 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   padding: 30px 35px;
   background-color: #2e2f33;
   border-radius: 20px;
   box-shadow: 0px 10px 40px #00000056;
   margin: 7px;
+  flex-direction: column;
+  letter-spacing: 1px;
 }
+

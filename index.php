@@ -65,30 +65,31 @@ $result = $mysqli->query($sql);
 </header>
 <div class="center">
 <div class="main">
+
          <?php
             while($user_data = mysqli_fetch_assoc($result))
             {
 
                 echo "<div class=\"card\">";
-                echo"<thead class=\"text\"><tr><th><font color=\"red\">TITULO: </font></th></tr>";
-                echo"<td><font color=\"white\">".$user_data['titulo']."</td></br>";
+             //   echo"<p><thead class=\"text\"><tr><th><font color=\"red\">TITULO: </font></th></tr>";
+                echo"<p><td><font color=\"white\">".$user_data['titulo']."</td></br></p>";
 
 
-                echo"<thead><tr><th><font color=\"red\">AUTOR: </font></th></tr>";
-                echo"<td>".$user_data['autor']."</td></br>";
+              //  echo"<p><thead><tr><th><font color=\"red\">AUTOR: </font></th></tr>";
+                echo"<p><td>".$user_data['autor']."</td></br></p>";
 
 
-                echo"<thead><tr><th><font color=\"red\">ANO: </font></th></tr>";
-                echo"<td>".$user_data['ano']."</td></br>";
+             //   echo"<p><thead><tr><th><font color=\"red\">ANO: </font></th></tr>";
+                echo"<p><td>".$user_data['ano']."</td></br></p>";
 
 
-                echo"<thead><tr><th><font color=\"red\">SOBRE: </font></th></tr>";      
-                echo"<td>".$user_data['sobre']."</td></br>";
+              //  echo"<p><thead><tr><th><font color=\"red\">SOBRE: </font></th></tr>";      
+                echo"<p><td>".$user_data['sobre']."</td></br></p>";
 
-                echo"<thead><tr><th><font color=\"red\">DATA: </font></th></tr>";
-                echo"<td>".$user_data['datain']."</td></br></br> </div>";
+               // echo"<p><thead><tr><th><font color=\"red\">DATA: </font></th></tr>";
+               // echo"<td>".$user_data['datain']."</td></br></br></p> ";
 
-                
+                echo "</div>";
             }
         ?>
     </tbody>
