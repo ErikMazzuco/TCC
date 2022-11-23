@@ -24,7 +24,7 @@ if (($_SESSION['id'] != '1')){
 
 <?php
 include_once('../../LOGIN/conexao.php');
-$sql = "SELECT * FROM usuarios ORDER BY id DESC";
+$sql = "SELECT * FROM livros ORDER BY ID DESC";
 $result = $mysqli->query($sql);
 
 
@@ -46,13 +46,11 @@ $result = $mysqli->query($sql);
     <thead>
         <tr>
         <th scope="col">#</th>
-        <th scope="col">Nome</th>
-        <th scope="col">email</th>
-        <th scope="col">senha</th>
-        <th scope="col">cpf</th>
-        <th scope="col">telefone</th>
+        <th scope="col">titulo</th>
+        <th scope="col">autor</th>
+        <th scope="col">ano</th>
+        <th scope="col">sobre</th>
         <th scope="col">datain</th>
-        <th scope="col">IMG</th>
         </tr>
     </thead>
     <tbody>
@@ -60,14 +58,12 @@ $result = $mysqli->query($sql);
             while($user_data = mysqli_fetch_assoc($result))
             {
                 echo"<tr>";
-                echo"<td>".$user_data['id']."</td>";
-                echo"<td>".$user_data['nome']."</td>";
-                echo"<td>".$user_data['email']."</td>";
-                echo"<td>".$user_data['senha']."</td>";
-                echo"<td>".$user_data['cpf']."</td>";
-                echo"<td>".$user_data['telefone']."</td>";
+                echo"<td>".$user_data['ID']."</td>";
+                echo"<td>".$user_data['titulo']."</td>";
+                echo"<td>".$user_data['autor']."</td>";
+                echo"<td>".$user_data['ano']."</td>";
+                echo"<td>".$user_data['sobre']."</td>";
                 echo"<td>".$user_data['datain']."</td>";
-                echo"<td>".$user_data['IMG']."</td>";
             }
 
 

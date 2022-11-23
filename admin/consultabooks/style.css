@@ -1,0 +1,22 @@
+.users{
+    margin: 10px;
+    margin-right: 10px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 40px #00000075;
+
+}
+.table{
+    color: white;
+}
+th{
+    color: blue;
+    text-transform: uppercase;
+    text-decoration: none;
+}
