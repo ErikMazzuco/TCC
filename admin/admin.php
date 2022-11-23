@@ -52,8 +52,14 @@ if (($_SESSION['id'] != '1')){
 
             <a href="SaveBooks/index.php">
             <div class="acoes">
-            CADASTRAR LIVRO</a> 
+            CADASTRAR LIVROS</a> 
             </div> 
+
+            <a href="consultabooks/index.php">
+            <div class="acoes">
+            CONSULTAR LIVROS</a> 
+            </div> 
+
 
             <a href="../LOGIN/logout.php">
             <div class="acoes">
