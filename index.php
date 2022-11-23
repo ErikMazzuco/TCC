@@ -63,49 +63,57 @@ $result = $mysqli->query($sql);
 
 </div>
 </header>
-
-<div class="users">
-
+<div class="center">
+<div class="main">
+<!--
     <table class="table">
     <thead>
         <tr>
-        <th scope="col">#</th>
+
         <th scope="col">titulo</th>
         <th scope="col">autor</th>
         <th scope="col">ano</th>
         <th scope="col">sobre</th>
         <th scope="col">datain</th>
+
         </tr>
     </thead>
     <tbody>
-            <?php
+-->
+         <?php
             while($user_data = mysqli_fetch_assoc($result))
             {
-                echo"<tr>";
 
-                echo"<td>".$user_data['ID']."</td>";
+                echo "<div class=\"card\">";
+                echo"<thead class=\"text\"><tr><th><font color=\"red\">TITULO: </font></th></tr>";
+                echo"<td><font color=\"white\">".$user_data['titulo']."</td></br>";
 
-                echo"<td>".$user_data['titulo']."</td>";
 
-                echo"<td>".$user_data['autor']."</td>";
+                echo"<thead><tr><th><font color=\"red\">AUTOR: </font></th></tr>";
+                echo"<td>".$user_data['autor']."</td></br>";
 
-                echo"<td>".$user_data['ano']."</td>";
 
-                echo"<td>".$user_data['sobre']."</td>";
+                echo"<thead><tr><th><font color=\"red\">ANO: </font></th></tr>";
+                echo"<td>".$user_data['ano']."</td></br>";
 
-                echo"<td>".$user_data['datain']."</td>";
+
+                echo"<thead><tr><th><font color=\"red\">SOBRE: </font></th></tr>";      
+                echo"<td>".$user_data['sobre']."</td></br>";
+
+                echo"<thead><tr><th><font color=\"red\">DATA: </font></th></tr>";
+                echo"<td>".$user_data['datain']."</td></br></br> </div>";
+
                 
             }
-
-
-
-
-            ?>
+        ?>
     </tbody>
+
+
+
 </table>
 
 </div>
-
+        </div>
 
 
 
