@@ -65,21 +65,6 @@ $result = $mysqli->query($sql);
 </header>
 <div class="center">
 <div class="main">
-<!--
-    <table class="table">
-    <thead>
-        <tr>
-
-        <th scope="col">titulo</th>
-        <th scope="col">autor</th>
-        <th scope="col">ano</th>
-        <th scope="col">sobre</th>
-        <th scope="col">datain</th>
-
-        </tr>
-    </thead>
-    <tbody>
--->
          <?php
             while($user_data = mysqli_fetch_assoc($result))
             {
