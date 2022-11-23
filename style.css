@@ -22,28 +22,24 @@ body{
   display: inline-flex;
 }
  .menu li{
-
     display: inline-blocks;
     font-size: 20px;
     margin: 0px 15px;
     display: inline-block;
  }
   .menu li a{
-
     text-decoration: none;
     color: aliceblue;
     text-transform: uppercase;
     padding: 15px 10px;
     border-radius: 15px;
   }
-
 .menu li a:hover{
     background-color:rgba(100, 100, 100, 0.5);
     padding: 5px 10px;
 }
 .table{
   color: white;
-
 }
 th{
   color: white;
