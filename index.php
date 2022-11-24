@@ -72,11 +72,11 @@ $result = $mysqli->query($sql);
 
                 echo "<div class=\"card\">";
              //   echo"<p><thead class=\"text\"><tr><th><font color=\"red\">TITULO: </font></th></tr>";
-                echo"<p><td><font color=\"white\">".$user_data['titulo']."</td></br></p>";
+                echo"<p><td><font color=\"red\"><b>".$user_data['titulo']."</td></br></font></p></b>";
 
 
               //  echo"<p><thead><tr><th><font color=\"red\">AUTOR: </font></th></tr>";
-                echo"<p><td>".$user_data['autor']."</td></br></p>";
+                echo"<p><td><font color=\"white\">".$user_data['autor']."</td></br></p>";
 
 
              //   echo"<p><thead><tr><th><font color=\"red\">ANO: </font></th></tr>";
@@ -89,7 +89,7 @@ $result = $mysqli->query($sql);
                // echo"<p><thead><tr><th><font color=\"red\">DATA: </font></th></tr>";
                // echo"<td>".$user_data['datain']."</td></br></br></p> ";
 
-                echo "</div>";
+                echo "</div></font>";
             }
         ?>
     </tbody>
