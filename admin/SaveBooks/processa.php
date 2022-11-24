@@ -5,11 +5,11 @@ include_once("../../login/conexao.php");
 $titulo = $_POST ['titulo'];
 $autor = $_POST ['autor'];
 $ano = $_POST ['ano'];
-$estoque = $_POST ['estoque'];
+//$estoque = $_POST ['estoque'];
 $sobre = $_POST ['sobre'];
 
 
-$result = "INSERT INTO livros (titulo,autor,ano,sobre,datain) VALUES ('$titulo','$autor','$ano','$sobre','now()')";
+$result = "INSERT INTO livros (titulo,autor,ano,sobre,datain) VALUES ('$titulo','$autor','$ano','$sobre',NOW())";
 
 $query = mysqli_query ($mysqli,$result);
 

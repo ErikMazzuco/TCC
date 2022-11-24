@@ -58,7 +58,7 @@ $result = $mysqli->query($sql);
             while($user_data = mysqli_fetch_assoc($result))
             {
                 echo"<tr>";
-                echo"<td>".$user_data['ID']."</td>";
+                echo"<td>".$user_data['id']."</td>";
                 echo"<td>".$user_data['titulo']."</td>";
                 echo"<td>".$user_data['autor']."</td>";
                 echo"<td>".$user_data['ano']."</td>";

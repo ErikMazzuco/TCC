@@ -1,3 +1,17 @@
+
+<!-- verifa se é admin -->
+<?php 
+if(isset($_SESSION['id'])) {
+
+
+if (($_SESSION['id'] != '1')){
+    header("Location: ../index.php");
+    }
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,6 +20,20 @@
 <link rel="stylesheet" href="style.css">
 <title>New Book</title>
 </head>
+
+
+
+
+<?php
+//mensagen de sucesso ou erro
+if(isset($_SESSION['msg'])){
+echo $_SESSION['msg'];
+unset($_SESSION['msg']); //destroi a variavel global
+}
+?>
+
+
+
 
     <body>
         <div class=center>
@@ -27,10 +55,10 @@
                     <input type="date" id="ano" name="ano" placeholder="insira o ano de lançamento">
                     </div>
 
-                    <div class="textfield">
+                    <!--<div class="textfield">
                     <label>quantidade:</label>
                     <input type="int" id="estoque" name="estoque" placeholder="quantos livros">
-                    </div>
+                    </div>  -->
 
                     <div class="textfield">
                     <label>descrição:</label>
@@ -44,13 +72,4 @@
 </html>
 
 
-<!-- verifa se é admin -->
-<?php 
-if(isset($_SESSION['id'])) {
 
-
-if (($_SESSION['id'] != '1')){
-    header("Location: ../index.php");
-    }
-}
-?>
