@@ -49,10 +49,10 @@ $result = $mysqli->query($sql);
         <th scope="col">Nome</th>
         <th scope="col">email</th>
         <th scope="col">senha</th>
-        <th scope="col">cpf</th>
+       <!-- <th scope="col">cpf</th>
         <th scope="col">telefone</th>
         <th scope="col">datain</th>
-        <th scope="col">IMG</th>
+        <th scope="col">IMG</th>  -->
         </tr>
     </thead>
     <tbody>
@@ -64,10 +64,10 @@ $result = $mysqli->query($sql);
                 echo"<td>".$user_data['nome']."</td>";
                 echo"<td>".$user_data['email']."</td>";
                 echo"<td>".$user_data['senha']."</td>";
-                echo"<td>".$user_data['cpf']."</td>";
-                echo"<td>".$user_data['telefone']."</td>";
-                echo"<td>".$user_data['datain']."</td>";
-                echo"<td>".$user_data['IMG']."</td>";
+                //echo"<td>".$user_data['cpf']."</td>";
+                //echo"<td>".$user_data['telefone']."</td>";
+                //echo"<td>".$user_data['datain']."</td>";
+                //echo"<td>".$user_data['IMG']."</td>";
             }
 
 

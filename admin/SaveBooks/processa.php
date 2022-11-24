@@ -9,7 +9,7 @@ $estoque = $_POST ['estoque'];
 $sobre = $_POST ['sobre'];
 
 
-$result = "INSERT INTO Livros (titulo,autor,ano,estoque,sobre) VALUES ('$titulo','$autor','$ano','$estoque','$sobre'";
+$result = "INSERT INTO livros (titulo,autor,ano,sobre,datain) VALUES ('$titulo','$autor','$ano','$sobre','now()')";
 
 $query = mysqli_query ($mysqli,$result);
 
@@ -19,17 +19,10 @@ $query = mysqli_query ($mysqli,$result);
 if(mysqli_insert_id($mysqli)){
 
     $_SESSION['msg'] = "<p style= 'color:green;'>livro cadastrado</p>";
-    
-    //redireciona para o arquivo index
-
     header("index.php");
     }else{
-    
-    $_SESSION['msg'] = "<p style='color:red;'> não foi POSSIVEL cadastraR O LIVRO</p>";
-    
-
+    $_SESSION['msg'] = "<p style='color:red;'> não foi POSSIVEL cadastrar O LIVRO</p>";
     header("index.php");
     }
-    
     mysqli_close($mysqli);
  ?>

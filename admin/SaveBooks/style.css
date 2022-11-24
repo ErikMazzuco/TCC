@@ -94,3 +94,6 @@ body{
         height: 100%;
     }
 }
+#submit :hover{
+    background: #757171;
+}

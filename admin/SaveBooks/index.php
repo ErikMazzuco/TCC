@@ -36,7 +36,7 @@
                     <label>descrição:</label>
                     <input type="text" id="sobre" name="sobre" placeholder="descrição do estado do livros">
                     </div>
-                    <input type="submit" value="Adicionar livro" class="submit">
+                    <input type="submit" value="Adicionar livro" id= "submit" class="submit">
                 </form>
         </div>        
     </body>
