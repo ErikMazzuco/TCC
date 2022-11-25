@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    font-family: 'Noto Sans' , sans-serif;
+}
+
+
+img{
+        
+    width: 30vw;
+    height: 30vh;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itens{
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
