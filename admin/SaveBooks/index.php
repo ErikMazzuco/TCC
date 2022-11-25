@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="style.css">
 <title>New Book</title>
 </head>
-
     <body>
         <div class=center>
 
