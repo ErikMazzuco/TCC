@@ -51,16 +51,7 @@
     </head>
 
 <body> 
-<?php
 
-//se existir a variavel imprime a variavel global
-
-if(isset($_SESSION['msg'])){
-echo $_SESSION['msg'];
-//unset($_SESSION['msg']); 
-}
-
-?>
 
     <div class="main-login">
     <div class="right-login">
@@ -81,6 +72,16 @@ echo $_SESSION['msg'];
                     <button class="btn-login" type="submit">Entrar</button>
                 
                     <p><font color="white">Não tem conta?  </font><a href="CADASTRO/index.php"><font color="gray">CRIE UMA! </font></a></p>
+                    <?php
+
+//se existir a variavel imprime a variavel global
+
+if(isset($_SESSION['msg'])){
+echo $_SESSION['msg'];
+//unset($_SESSION['msg']); 
+}
+
+?>
             </form>
             </div>
      </div>

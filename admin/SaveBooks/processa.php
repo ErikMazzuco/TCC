@@ -1,6 +1,6 @@
 <?php
+echo $_SESSION['book'];
 
-session_start();
 include_once("../../login/conexao.php");
 
 $titulo = $_POST ['titulo'];
@@ -16,20 +16,19 @@ $query = mysqli_query ($mysqli,$result);
 
 if(mysqli_insert_id($mysqli)){
 
-    $_SESSION['msg'] = "<p style='color:green;'>Livro cadastrado com sucesso</p>";
+    $_SESSION['book'] = "<p style='color:green;'>Livro cadastrado com sucesso</p>";
     
     //redireciona para o arquivo index
     header("Location: index.php");
     
     }else{
     
-    $_SESSION['msg'] = "<p style='color:red;'>Livro não foi cadastrado com sucesso</p>";
+    $_SESSION['book'] = "<p style='color:red;'>Livro não foi cadastrado com sucesso</p>";
     
-    header("Location: index.php");
+    header("Location: iindex.php");
     
     }
     
-    mysqli_close($mysqli);
     
 
  ?>

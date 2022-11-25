@@ -32,18 +32,18 @@ unset($_SESSION['msg']); //destroi a variavel global
 
 <div class="textfield"> 
 <label>Nome: </label>
-<input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
+<input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
 </div>
 
 <div class="textfield"> 
 <label>E-mail: </label>
-<input type="email" id="email" name="email" placeholder="Digite o seu e-mail"><br><br>
+<input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required><br><br>
 </div>
 
 
 <div class="textfield"> 
 <label>SENHA: </label>
-<input type="password" id="senha" name="senha" placeholder="Digite uma senha"><br><br>
+<input type="password" id="senha" name="senha" placeholder="Digite uma senha" required><br><br>
 </div>
 
 <input type="submit" class="btn-cadastro" value="Criar Minha Conta">
