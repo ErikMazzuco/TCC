@@ -27,5 +27,5 @@ if(mysqli_insert_id($mysqli)){
     header("Location: iindex.php");
     
     }
-
+    mysqli_close($mysqli);
  ?>
