@@ -1,7 +1,5 @@
 <?php
 session_start();
-echo $_SESSION['book'];
-
 include_once("../../login/conexao.php");
 
 $titulo = $_POST ['titulo'];
@@ -29,7 +27,5 @@ if(mysqli_insert_id($mysqli)){
     header("Location: iindex.php");
     
     }
-    
-    
 
  ?>
