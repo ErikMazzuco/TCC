@@ -34,22 +34,7 @@
                     <input type="submit" value="Adicionar livro" id= "submit" class="submit">
 
 
- <?php
-//mensagen de sucesso ou erro
-if(isset($_SESSION['book'])){
-    echo "<div class=\"bookok\">";
-echo $_SESSION['book'];
-//unset($_SESSION['msg']); //destroi a variavel global
-}
-if(isset($_SESSION['id'])) {
-    echo $_SESSION['book'];
-
-    if (($_SESSION['id'] != '1')){
-        header("Location: ../index.php");
-        }
-    }
-?>
-                </form>
+</form>
         </div>        
     </body>
 

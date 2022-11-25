@@ -1,4 +1,5 @@
 <?php
+session_start();
 echo $_SESSION['book'];
 
 include_once("../../login/conexao.php");
