@@ -51,9 +51,21 @@
     </head>
 
 <body> 
+<?php
+
+//se existir a variavel imprime a variavel global
+
+if(isset($_SESSION['msg'])){
+echo $_SESSION['msg'];
+//unset($_SESSION['msg']); 
+}
+
+?>
+
     <div class="main-login">
     <div class="right-login">
             <form action="" class="card-login" autocomplete="off" method="POST">
+
             <h1>ENTRE</h1>
                 
                 <div class="textfield"> 

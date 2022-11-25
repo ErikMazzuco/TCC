@@ -10,8 +10,6 @@ if (($_SESSION['id'] != '1')){
 }
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,20 +18,6 @@ if (($_SESSION['id'] != '1')){
 <link rel="stylesheet" href="style.css">
 <title>New Book</title>
 </head>
-
-
-
-
-<?php
-//mensagen de sucesso ou erro
-if(isset($_SESSION['msg'])){
-echo $_SESSION['msg'];
-unset($_SESSION['msg']); //destroi a variavel global
-}
-?>
-
-
-
 
     <body>
         <div class=center>
@@ -65,6 +49,15 @@ unset($_SESSION['msg']); //destroi a variavel global
                     <input type="text" id="sobre" name="sobre" placeholder="descrição do estado do livros">
                     </div>
                     <input type="submit" value="Adicionar livro" id= "submit" class="submit">
+
+
+ <?php
+//mensagen de sucesso ou erro
+if(isset($_SESSION['msg'])){
+echo $_SESSION['msg'];
+//unset($_SESSION['msg']); //destroi a variavel global
+}
+?>
                 </form>
         </div>        
     </body>

@@ -1,11 +1,11 @@
 <?php
+
 session_start();
 include_once("../../login/conexao.php");
 
 $titulo = $_POST ['titulo'];
 $autor = $_POST ['autor'];
 $ano = $_POST ['ano'];
-//$estoque = $_POST ['estoque'];
 $sobre = $_POST ['sobre'];
 
 
@@ -13,16 +13,23 @@ $result = "INSERT INTO livros (titulo,autor,ano,sobre,datain) VALUES ('$titulo',
 
 $query = mysqli_query ($mysqli,$result);
 
-//se inserir com sucesso
-//apresenta msg caso der certo
 
 if(mysqli_insert_id($mysqli)){
 
-    $_SESSION['msg'] = "<p style= 'color:green;'>livro cadastrado</p>";
-    header("index.php");
+    $_SESSION['msg'] = "<p style='color:green;'>Livro cadastrado com sucesso</p>";
+    
+    //redireciona para o arquivo index
+    header("Location: index.php");
+    
     }else{
-    $_SESSION['msg'] = "<p style='color:red;'> não foi POSSIVEL cadastrar O LIVRO</p>";
-    header("index.php");
+    
+    $_SESSION['msg'] = "<p style='color:red;'>Livro não foi cadastrado com sucesso</p>";
+    
+    header("Location: index.php");
+    
     }
+    
     mysqli_close($mysqli);
+    
+
  ?>
