@@ -66,6 +66,7 @@ $result = $mysqli->query($sql);
 
 </div>
 </header>
+
 <div class="center">
 <div class="main">
 
