@@ -34,10 +34,11 @@ if (($_SESSION['id'] == '1')){
     <?php
     if(isset($_SESSION['id'])) {
 
-        
-        $_SESSION['ola'] = '  <ul><li><a><b>Olá,</b>  ';
+        echo "<a href='perfil/index.php?id=$_SESSION[id]'>";
+        $_SESSION['ola'] = '  <ul><li><b>Olá,</b>  ';
         echo $_SESSION['ola']; 
             echo $_SESSION['nome']; 
+            echo "</a>";
             $_SESSION['fim'] = '</ul></li>';
             echo $_SESSION['fim'];
 
@@ -53,12 +54,14 @@ if (($_SESSION['id'] == '1')){
         echo $_SESSION['entrar']; 
     }
         ?>
+
+
         <?php
 include_once('LOGIN/conexao.php');
 $sql = "SELECT * FROM livros ORDER BY ID DESC";
 $result = $mysqli->query($sql);
 
-
+//$id = $_GET['id'];
 ?>
 
 </div>
@@ -70,7 +73,7 @@ $result = $mysqli->query($sql);
             while($user_data = mysqli_fetch_assoc($result))
             {
 
-                echo "<div class=\"card\">";
+                echo "<a class=\"card\" href='verbook/index.php?id=$user_data[id]'>";
              //   echo"<p><thead class=\"text\"><tr><th><font color=\"red\">TITULO: </font></th></tr>";
                 echo"<p><td><font color=\"red\"><b>".$user_data['titulo']."</td></br></font></p></b>";
 
@@ -89,7 +92,7 @@ $result = $mysqli->query($sql);
                // echo"<p><thead><tr><th><font color=\"red\">DATA: </font></th></tr>";
                // echo"<td>".$user_data['datain']."</td></br></br></p> ";
 
-                echo "</div></font>";
+                echo "</a></font>";
             }
         ?>
     </tbody>

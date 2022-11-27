@@ -66,8 +66,17 @@ body{
   margin: 7px;
   flex-direction: column;
   letter-spacing: 1px;
+  text-decoration: none;
+  text-decoration-line: none;
 }
-
+a{
+  text-decoration: none;
+  text-decoration-line: none;
+  
+}
+a:hover{
+  background-color: #47484d;
+}
 @media screen and (max-width: 650px) {
 
   .card{
