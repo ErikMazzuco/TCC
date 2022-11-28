@@ -11,16 +11,19 @@ body{
     width: 100%;
     background-color: rgb(0, 0, 0);
     display: flex;
-    justify-content: center;
-    align-items: center;
+   /* justify-content: center;*/
     padding: 17px 0px;
     position: fixed;
+    overflow-Z: hidden;
+    z-index: 20;
+    
  }
 .logo-texto{
     color: aliceblue;
 }
 .menu{
   display: inline-flex;
+
   
 }
  .menu li{
@@ -57,7 +60,7 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 120px;
     
 }
 .card{
@@ -74,15 +77,23 @@ body{
   letter-spacing: 1px;
   text-decoration: none;
   text-decoration-line: none;
-}
-a{
-  text-decoration: none;
-  text-decoration-line: none;
+  overflow-Z: hidden;
   
 }
+
+
 a:hover{
-  background-color: #47484d;
+  background-color: #56585f;
+  margin: 10px 20px;
+  border-radius: 20px;
+  overflow-Z: hidden;
+  width: 50px;
+  height: 50p;
 }
+
+
+
+
 @media screen and (max-width: 650px) {
 
   .main{
@@ -90,4 +101,129 @@ a:hover{
      margin-right: 5%;
      width: 90vw;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+ /*
+.logo {
+ font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #000000;
+  height: 8vh;
+
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.nav-list a{
+  
+}
+.nav-list a:hover{
+  background-color: transparent;
+  
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 60vw;
+    height: 92vh;
+    background: #000000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+    margin-left: 15px;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
 }

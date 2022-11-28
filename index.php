@@ -2,6 +2,14 @@
 session_start();
 
 ?>
+<!-- Envia para pagina de admin -->
+<?php 
+if(isset($_SESSION['id'])) {
+if (($_SESSION['id'] == '1')){
+    header("Location: admin/admin.php");
+    }
+}
+?>
 
 
 <!DOCTYPE html>
@@ -19,31 +27,40 @@ session_start();
 <body>
 <header>
 
-<!-- Envia para pagina de admin -->
-<?php 
-if(isset($_SESSION['id'])) {
-if (($_SESSION['id'] == '1')){
-    header("Location: admin/admin.php");
-    }
-}
-?>
 
-<div class="menu">
+<nav>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+          
+        </div>
+        <ul class="nav-list">
+          <!--<li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Contato</a></li>-->
 
-    <!-- usuario comum mostra se logado-->
+
+
+  <!--<div class="menu">
+
+   usuario comum mostra se logado-->
     <?php
     if(isset($_SESSION['id'])) {
 
-        echo "<a href='perfil/index.php?id=$_SESSION[id]'>";
-        $_SESSION['ola'] = '  <ul><li><b>Olá,</b>  ';
-        echo $_SESSION['ola']; 
+
+        echo "<li><a href='perfil/index.php?id=$_SESSION[id]'>";
+        //$_SESSION['ola'] = '  <ul><li><b>Olá,</b>  ';
+        //echo $_SESSION['ola']; 
             echo $_SESSION['nome']; 
-            echo "</a>";
-            $_SESSION['fim'] = '</ul></li>';
-            echo $_SESSION['fim'];
+            echo "</a></li>";
+
+            //$_SESSION['fim'] = '</li>';
+           // echo $_SESSION['fim'];
 
 
-        $_SESSION['sair'] = '<ul><li><a href="LOGIN/logout.php">Sair</a></li></ul>';
+        $_SESSION['sair'] = '<li><a href="LOGIN/logout.php">Sair</a></li>';
         echo $_SESSION['sair']; 
 
 
@@ -54,7 +71,8 @@ if (($_SESSION['id'] == '1')){
         echo $_SESSION['entrar']; 
     }
         ?>
-
+    </ul>
+      </nav>
 
         <?php
 include_once('LOGIN/conexao.php');
@@ -104,8 +122,6 @@ $result = $mysqli->query($sql);
 
 </div>
         </div>
-
-
-
+        <script src="mobile-navbar.js"></script>
 </body>
 </html>
