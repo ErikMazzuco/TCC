@@ -54,7 +54,7 @@ body{
   
 }
 .main{
-  width: 50vw;
+  width: 40vw;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -68,7 +68,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 35px;
+  padding: 35px 35px;
   background-color: #2e2f33;
   border-radius: 20px;
   box-shadow: 0px 10px 40px #00000056;
@@ -80,6 +80,9 @@ body{
   overflow-Z: hidden;
   
 }
+a{
+
+}
 
 
 a:hover{
@@ -87,8 +90,8 @@ a:hover{
   margin: 10px 20px;
   border-radius: 20px;
   overflow-Z: hidden;
-  width: 52vw;
-  height: 28vh;
+  width: 43vw;
+  height: 20vh;
 }
 
 
