@@ -101,6 +101,10 @@ a:hover{
      margin-right: 5%;
      width: 90vw;
   }
+  a:hover{
+    width: 92vw;
+    height: 28vh;
+  }
 }
 
 
