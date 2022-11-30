@@ -43,33 +43,19 @@ if (($_SESSION['id'] != '1')){
     <div class="center">
         <div class="card">
 
-            <h1>Oque deseja fazer?</h1> </br>
+            <h1>Oque deseja fazer?</h1></br>
 
-           <a href="Users/index.php">
-            <div class="acoes">
-              USUARIOS </a> 
-            </div>
+            <a class="acoes" href="Users/index.php">USUARIOS</a>
+ 
+            <a class="acoes" href="SaveBooks/index.php">CADASTRAR LIVROS</a> 
+        
+            <a class="acoes" href="consultabooks/index.php">CONSULTAR LIVROS</a> 
+        
+            <a class="acoes" href="../LOGIN/logout.php">SAIR</a>
 
-            <a href="SaveBooks/index.php">
-            <div class="acoes">
-            CADASTRAR LIVROS</a> 
-            </div> 
-
-            <a href="consultabooks/index.php">
-            <div class="acoes">
-            CONSULTAR LIVROS</a> 
-            </div> 
-
-
-            <a href="../LOGIN/logout.php">
-            <div class="acoes">
-                SAIR</a>
-
-            
         </div>
     </div>
-</div>
-    </div><!--  fim menu admin  -->
+</div><!--  fim menu admin  -->
 
 </body>
 </html>

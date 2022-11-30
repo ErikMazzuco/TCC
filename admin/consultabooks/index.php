@@ -43,27 +43,40 @@ $result = $mysqli->query($sql);
 <div class="users">
 
     <table class="table">
-    <thead>
-        <tr>
+   
+        <!--<tr>
         <th scope="col">#</th>
         <th scope="col">titulo</th>
         <th scope="col">autor</th>
         <th scope="col">ano</th>
         <th scope="col">sobre</th>
         <th scope="col">datain</th>
-        </tr>
-    </thead>
+        </tr>-->
+   
     <tbody>
             <?php
             while($user_data = mysqli_fetch_assoc($result))
             {
-                echo"<tr>";
+               
+                echo" <div class=\"card\"> <thead><tr><th scope='col'>#</th>";
                 echo"<td>".$user_data['id']."</td>";
+
+                echo"<th scope='col'>titulo</th>";
                 echo"<td>".$user_data['titulo']."</td>";
+
+                echo"  <th scope='col'>autor</th>";
                 echo"<td>".$user_data['autor']."</td>";
+
+                echo"<th scope='col'>ano</th>";
                 echo"<td>".$user_data['ano']."</td>";
+
+                echo"<th scope='col'>sobre</th>";
                 echo"<td>".$user_data['sobre']."</td>";
+
+                echo"<th scope='col'>datain</th>";
                 echo"<td>".$user_data['datain']."</td>";
+                
+
             
 
             echo "<td>
@@ -78,7 +91,7 @@ $result = $mysqli->query($sql);
                                 </svg>
                             </a>
                             </td>";
-                        echo "</tr>";
+                        echo "</tr> </thead></a>";
            
             }
             ?>

@@ -68,12 +68,16 @@ else
             <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" value="<?php echo $email ?>" required><br><br>
             </div>
 
+
+            <input type="hidden" name="id" value="<?php echo $id ?>">
+
+
             <div class="textfield"> 
             <label>Senha: </label>
             <input type="password" id="senha" name="senha" placeholder="Digite uma senha" value="<?php echo $senha ?>" required><br><br>
             </div>
 
-            <input type="submit" class="btn-cadastro" value="SALVAR">
+            <input type="submit" name="update" id="update" class="btn-cadastro" value="SALVAR">
 
 
         </form>
