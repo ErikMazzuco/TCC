@@ -13,6 +13,7 @@ if($result->num_rows > 0)
     $autor =$user_data ['autor'];
     $ano =$user_data ['ano'];
     $sobre =$user_data ['sobre'];
+    $sinopese =$user_data ['sinopese'];
     }
 }
 else
@@ -49,10 +50,11 @@ echo"  <div class='main-login'>
 
 
 //echo $id , "</br>";
-echo $titulo, "</br>";
-echo $autor, "</br>";
+echo"<font color=\"red\">";
+echo $titulo, "</font></br></br>";
+echo $autor, "</br><center>";
 echo $ano, "</br>";
-echo $sobre, "</br>";
+
    
 
 
@@ -61,7 +63,7 @@ echo" </div>
 
 <div class='card2'>
 
- $sobre </br>
+ $sinopese </br>
 
 </div>
 
