@@ -26,6 +26,13 @@
                 $_SESSION['id'] = $usuario['id'];
                 $_SESSION['nome'] = $usuario['nome'];
 
+                
+$nome = $_SESSION['nome'];
+$result = "INSERT INTO logins (nome,datain) VALUES ('$nome',NOW())";
+
+$query = mysqli_query ($mysqli,$result);
+
+
                 header("Location: ../index.php");
 
             } else {
