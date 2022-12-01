@@ -27,10 +27,21 @@
                     </div>
 
 
+
+
                     <div class="textfield">
                     <label>descrição:</label>
                     <input type="text" id="sobre" name="sobre" placeholder="descrição do estado do livros" required>
                     </div>
+
+
+
+                    <div class="textfield">
+                    <label>Sinopse:</label>
+                    <input type="text" id="sinopse" name="sinopse" placeholder="Sinopse do livros" required>
+                    </div>
+
+
                     <input type="submit" value="Adicionar livro" id= "submit" class="submit">
 
 
