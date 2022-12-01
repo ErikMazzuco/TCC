@@ -28,8 +28,15 @@ img{
 a{
     text-decoration: none;
     color: black;
+    background-color: gray;
+    border-radius: 20px;
+    padding: 10px;
+
 
 }
 a :hover{
-    color: gray;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
