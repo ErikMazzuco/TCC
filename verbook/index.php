@@ -28,7 +28,7 @@ else
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -51,7 +51,7 @@ echo"  <div class='main-login'>
 
 //echo $id , "</br>";
 echo"<font color=\"red\">";
-echo $titulo, "</font></br></br>";
+echo $titulo, "</font></br>";
 echo $autor, "</br><center>";
 echo $ano, "</br>";
 
